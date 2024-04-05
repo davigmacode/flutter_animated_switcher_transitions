@@ -62,14 +62,14 @@ abstract class AnimatedSwitcherTransitions {
   /// from the top right corner relative to the widget.
   static const slideTopRight = _slideTopRight;
   static Widget _slideTopRight(Widget child, Animation<double> animation) {
-    return slide(135)(child, animation);
+    return slide(315)(child, animation);
   }
 
   /// Animates widgets by sliding them out
   /// from the bottom left corner relative to the widget.
   static const slideBottomLeft = _slideBottomLeft;
   static Widget _slideBottomLeft(Widget child, Animation<double> animation) {
-    return slide(315)(child, animation);
+    return slide(135)(child, animation);
   }
 
   /// Animates widgets by sliding them out
@@ -222,7 +222,7 @@ abstract class AnimatedSwitcherTransitions {
   }) {
     return (child, final animation) {
       final isReversed = animation.status == AnimationStatus.reverse;
-      final directionRadians = getRadiansFromDegrees(direction);
+      final directionRadians = _getRadiansFromDegrees(direction);
       final offset = Offset.fromDirection(directionRadians, distance);
       final tween = Tween<Offset>(
         begin: isReversed ? -offset : offset,
@@ -322,6 +322,6 @@ abstract class AnimatedSwitcherTransitions {
   }
 }
 
-double getRadiansFromDegrees(double degrees) {
+double _getRadiansFromDegrees(double degrees) {
   return degrees * pi / 180;
 }
