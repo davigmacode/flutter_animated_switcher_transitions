@@ -1,7 +1,4 @@
 library animated_switcher_transitions;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/layouts.dart';
+export 'src/transitions.dart';
