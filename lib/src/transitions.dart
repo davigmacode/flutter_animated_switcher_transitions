@@ -93,6 +93,18 @@ abstract class AnimatedSwitcherTransitions {
     return flip(Axis.vertical)(child, animation);
   }
 
+  /// Animates widgets by shake them along the horizontal axis.
+  static const shakeX = _shakeX;
+  static Widget _shakeX(Widget child, Animation<double> animation) {
+    return shake(direction: Axis.horizontal)(child, animation);
+  }
+
+  /// Animates widgets by shake them along the vertical axis.
+  static const shakeY = _shakeY;
+  static Widget _shakeY(Widget child, Animation<double> animation) {
+    return shake(direction: Axis.vertical)(child, animation);
+  }
+
   /// Creates a transition builder for AnimatedSwitcher that
   /// animates widgets by rotating them around a central point.
   ///
