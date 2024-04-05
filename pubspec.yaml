@@ -1,11 +1,22 @@
 name: animated_switcher_transitions
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: Provides a collection of pre-built transition and layout builders for AnimatedSwitcher.
+version: 1.0.0
+homepage: https://github.com/davigmacode/flutter_animated_switcher_transitions
+
+topics:
+  - ui
+  - layout
+  - transition
+  - animated-switcher
+  - widgetarian
+
+funding:
+  - https://buymeacoffee.com/davigmacode
+  - https://ko-fi.com/davigmacode
 
 environment:
-  sdk: '>=3.1.0 <4.0.0'
-  flutter: ">=1.17.0"
+  sdk: '>=2.17.0 <4.0.0'
+  flutter: '>=2.0.0'
 
 dependencies:
   flutter:
